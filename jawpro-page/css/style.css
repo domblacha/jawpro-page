@@ -1,0 +1,1006 @@
+/*
+font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shadow::after {
+    content: "";
+    display: block;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .wrap {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
+@keyframes shakes {
+    0% {
+        transform: translateX(0)
+    }
+
+    90% {
+        transform: translateX(0)
+    }
+
+    91% {
+        transform: translateX(20px)
+    }
+
+    92% {
+        transform: translateX(-20px)
+    }
+
+    93% {
+        transform: translateX(20px)
+    }
+
+    94% {
+        transform: translateX(-20px)
+    }
+
+    95% {
+        transform: translateX(20px)
+    }
+
+    96% {
+        transform: translateX(-20px)
+    }
+
+    97% {
+        transform: translateX(20px)
+    }
+
+    98% {
+        transform: translateX(-20px)
+    }
+
+    99% {
+        transform: translateX(20px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+html {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 10px;
+    background-color: #F3F2EB;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/photo1.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.welcome {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    color: #fff;
+}
+
+.welcome h1 {
+    font-size: 7rem;
+
+}
+
+.welcome h2 {
+    margin-top: 8%;
+    font-size: 2.2rem;
+    font-weight: normal;
+    min-height: 86px;
+
+
+}
+
+.welcome a {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Saira', sans-serif;
+    margin-top: 28%;
+    line-height: 4rem;
+    padding: 0 2.5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    animation: shakes 5s linear infinite;
+    transition: .3s;
+    text-decoration: none;
+
+}
+
+.welcome a span i {
+    margin-right: 7px;
+}
+
+
+
+
+
+/*PORTRAIT*/
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .welcome h1 {
+        font-size: 7.6rem;
+    }
+
+    .welcome h2 {
+        margin-top: 14%;
+        font-size: 2.4rem;
+
+    }
+
+    .welcome a {
+        margin-top: 32%;
+        line-height: 4.5rem;
+        padding: 0 3rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 375px) {
+    .welcome {
+        top: 20%;
+    }
+
+    .welcome h2 {
+        margin-top: 0;
+
+    }
+
+    .welcome a {
+        margin-top: 20%;
+        line-height: 5.5rem;
+        padding: 0 3.8rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 700px) {
+    .welcome a {
+        margin-top: 17%;
+        line-height: 5.5rem;
+        padding: 0 3.8rem;
+        width: 37%;
+        font-size: 2rem;
+    }
+
+    .welcome h2 {
+        margin-top: 5%;
+        font-size: 3rem;
+
+    }
+
+    h2 span::after {
+        content: '\A';
+        white-space: pre;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*LANDSCAPE*/
+
+@media (orientation: landscape) and (min-width: 533px) {
+    .welcome {
+        top: 7%;
+    }
+
+    .welcome h1 {
+        font-size: 6.5rem;
+    }
+
+    .welcome h2 {
+        margin-top: 3%;
+        font-size: 2rem;
+    }
+
+    .welcome a {
+        margin-top: 7%;
+        width: 35%;
+    }
+
+    h2 span::after {
+        content: '\A';
+        white-space: pre;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .welcome h1 {
+        font-size: 7rem;
+    }
+
+    .welcome h2 {
+        font-size: 2.2rem;
+
+    }
+
+    .welcome a {
+
+        width: 30%;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 812px) {
+
+    .welcome h2 {
+        margin-top: 2%;
+        font-size: 2.4rem;
+        line-height: 4.5rem;
+        padding: 0 3rem;
+    }
+
+    .welcome a {
+        margin-top: 3%;
+        line-height: 5.5rem;
+        padding: 0 3.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .welcome {
+        top: 18%;
+    }
+
+    .welcome h1 {
+        font-size: 9.5rem;
+    }
+
+    .welcome h2 {
+        margin-top: 5%;
+        font-size: 3.8rem;
+    }
+
+    .welcome a {
+        margin-top: 7%;
+        font-size: 2.2rem;
+    }
+
+    .welcome a:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #111;
+
+    }
+
+    a i {
+        margin-right: 10px;
+    }
+
+    a span.number {
+        display: none;
+    }
+
+    a span::after {
+        content: "kontakt";
+        white-space: pre;
+        text-transform: uppercase;
+
+    }
+
+
+
+}
+
+@media (orientation: landscape) and (min-width: 1300px) {
+    .welcome a {
+        width: 25%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .welcome {
+        top: 18%;
+    }
+
+    .welcome h1 {
+        font-size: 11rem;
+    }
+
+    .welcome h2 {
+        margin-top: 3%;
+        font-size: 4.4rem;
+
+    }
+
+    .welcome a {
+        margin-top: 7%;
+        font-size: 2.5rem;
+        width: 17%;
+    }
+
+}
+
+
+/*Features*/
+
+.features {
+    max-width: 1600px;
+    padding: 5%;
+    text-align: center;
+    margin: 50px auto 0;
+
+
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.circle {
+    background-color: black;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4.3rem;
+    margin: 0 auto 5%;
+    transition: .3s;
+
+}
+
+.feature h1 {
+    font-size: 2.2rem;
+    margin: 0 0 5% 0;
+    color: black;
+}
+
+.feature p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .features h2 {
+        font-size: 4rem;
+    }
+
+    .features h1 {
+        font-size: 2.2rem;
+    }
+
+    .feature p {
+        font-size: 1.9rem;
+
+    }
+
+    .circle:hover {
+        background-color: orange;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .features h2 {
+        font-size: 4.5rem;
+    }
+
+    .features h1 {
+        font-size: 2.6rem;
+    }
+
+    .feature p {
+        font-size: 2rem;
+
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .features h2 {
+        font-size: 5rem;
+    }
+
+    .features h1 {
+        font-size: 3rem;
+    }
+
+    .feature p {
+        font-size: 2.2rem;
+
+    }
+
+}
+
+/*Baner*/
+
+.baner {
+    background-color: #ACA296;
+    height: 30vh;
+    text-align: center;
+    line-height: 30vh;
+    padding: 0 10px;
+
+}
+
+.baner button {
+    font-family: 'Saira', sans-serif;
+    font-family: 300;
+    line-height: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: .3s;
+
+}
+
+
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .baner {
+        height: 25vh;
+        line-height: 25vh;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 375px) {
+    .baner {
+        height: 20vh;
+        line-height: 20vh;
+    }
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+    .features {
+        height: 80vh;
+    }
+
+    .features h2 {
+        margin-bottom: 75px;
+    }
+
+    .baner {
+        height: 20vh;
+        line-height: 20vh;
+    }
+
+    .baner button {
+        line-height: 50px;
+        padding: 0 40px;
+        font-size: 1.6rem;
+    }
+
+    .baner button:hover {
+        cursor: pointer;
+        background-color: orange;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .features h2 {
+        margin-bottom: 100px;
+    }
+
+}
+
+
+
+/*Elements*/
+
+.elements {
+    background-color: #F3F2EB;
+    text-align: center;
+    padding: 20px;
+
+}
+
+
+
+.elements h2 {
+    margin-top: 4%;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+}
+
+.element i {
+    font-size: 4rem;
+    margin: 7%;
+    color: black;
+
+}
+
+.element h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.element p {
+
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+
+
+@media (orientation:landscape) and (min-width:1024px) {
+
+    .element {
+        float: left;
+        width: 50%;
+        min-height: 320px;
+        padding: 0 20px;
+
+    }
+
+    .elements h2 {
+        margin-bottom: 6%;
+        font-size: 5rem;
+
+    }
+
+    .element i {
+        font-size: 4.5rem;
+    }
+
+    .element h1 {
+        font-size: 2.6rem;
+    }
+
+
+    .element p {
+
+        font-size: 2.2rem;
+
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    .elements h2 {
+
+        font-size: 5.5rem;
+
+    }
+
+    .element i {
+        font-size: 4.8rem;
+    }
+
+    .element h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .element p {
+
+        font-size: 2.4rem;
+
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .elements h2 {
+        margin-top: 7%;
+
+        font-size: 6.5rem;
+
+    }
+
+
+}
+
+
+
+/*Portfolio*/
+
+
+
+.portfolio {
+    /*    background-color: #361818;*/
+    background-color: #ACA296;
+    padding: 10px 30px 70px;
+
+}
+
+
+.portfolio h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5%;
+    margin-bottom: 15px;
+}
+
+.image img {
+    width: 100%;
+    max-height: 451px;
+}
+
+.about {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+
+}
+
+
+
+.about h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+
+}
+
+.about p {
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+/* .project {
+        margin-bottom: 20px;
+} */
+
+.project:nth-of-type(odd) {
+    background-color: #ACA296;
+}
+
+.project:nth-of-type(even) {
+    /*    background-color: #C5B09E;*/
+    background-color: #ACA296;
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+
+    .portfolio h1 {
+        font-size: 4rem;
+    }
+
+    .about h2 {
+        font-size: 2.6rem;
+    }
+
+    .about p {
+        font-size: 1.6rem;
+    }
+
+    .image {
+        float: left;
+        width: 50%;
+    }
+
+    .about {
+        float: left;
+        width: 50%;
+    }
+
+    .image img {
+        display: block;
+    }
+
+    .project:nth-of-type(even) .image {
+        float: right;
+    }
+
+    .project:nth-of-type(even) .about h2 {
+
+        text-indent: 0;
+        margin-left: 40px;
+
+    }
+
+    .project:nth-of-type(even) .about {
+        padding-right: 0;
+    }
+
+    .project:nth-of-type(even) .about p {
+        padding-right: 20px;
+        padding-left: 40px;
+
+    }
+
+    .project:nth-of-type(odd) .about h2 {
+        margin-right: 20px;
+
+
+    }
+
+}
+
+@media (orientation:landscape) and (min-width:1600px) {
+    .portfolio h1 {
+        font-size: 5rem;
+    }
+
+    .about h2 {
+        font-size: 2.8rem;
+    }
+
+    .about p {
+        font-size: 2rem;
+    }
+}
+
+/*contact*/
+.contactwrap {
+    padding-top: 20px;
+}
+
+.contact {
+    background-color: black;
+    padding: 30px;
+
+}
+
+.contact h1 {
+    margin-top: 4%;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.contact input,
+.contact button,
+.contact textarea {
+    font-family: 'Saira', sans-serif;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+
+}
+
+.contact input {
+
+    height: 3.6rem;
+    padding: 5px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    font-size: 1.4rem;
+    height: 4rem;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact button:hover {
+    cursor: pointer;
+}
+
+.socials {
+    padding-top: 20px;
+
+
+
+
+
+}
+
+.social {
+    padding: 10px 0;
+    color: white;
+
+
+
+
+
+}
+
+.social img {
+    float: left;
+
+
+}
+
+.social span {
+    line-height: 72px;
+    padding-left: 20px;
+    font-size: 2rem;
+}
+
+@media (orientation:landscape) and (min-width:1024px) {
+
+    .contactwrap {
+        width: 50%;
+        float: left;
+
+
+    }
+
+    .socials {
+        width: 50%;
+        float: left;
+    }
+
+    .social {
+        padding-left: 10%;
+    }
+
+    .contactwrap {
+        padding-left: 16%;
+        padding-right: 5%;
+    }
+
+    .contact h1 {
+        font-size: 4.3rem;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (orientation:landscape) and (min-width:1600px) {
+
+    .social {
+        padding-left: 8%;
+
+    }
+
+    .contactwrap {
+        padding-left: 25%;
+        padding-right: 2%;
+
+    }
+
+    .contact h1 {
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+
+    .social span {
+        line-height: 72px;
+        padding-left: 25px;
+        font-size: 2.5rem;
+    }
+}
+
+footer {
+    font-family: 'Saira', sans-serif;
+    /*    background-color: #ACA296;*/
+    background-color: black;
+    text-align: center;
+    height: 10vh;
+    font-weight: normal;
+    line-height: 10vh;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+@media (orientation: landscape) and (min-width: 1024px) {
+   
+
+    .feature {
+        float: left;
+        width: 33%;
+
+    }
+
+    .services p {
+        font-size: 3.8rem;
+        margin-bottom: 7%;
+
+    }
+
+    .feature h2 {
+        font-size: 2.2rem;
+    }
+
+    .feature h3 {
+        font-size: 1.9rem;
+    }
+
+    .circle:hover {
+        background-color: orange;
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .services p {
+        font-size: 5rem;
+
+    }
+
+    .feature h2 {
+        font-size: 2.6rem;
+    }
+
+    .feature h3 {
+        font-size: 2.2rem;
+    }
+}
+*/
